@@ -1,4 +1,4 @@
-""" Code for loading data. """
+""" Code for loading data"""
 import numpy as np
 import os
 import random
