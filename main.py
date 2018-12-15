@@ -33,7 +33,7 @@ from data_generator import DataGenerator
 from maml import MAML
 from tensorflow.python.platform import flags
 
-FLAGS = flags.FLAGS
+FLAGS = flags.FLAGS 
 
 ## Dataset/method options
 flags.DEFINE_string('datasource', 'sinusoid', 'sinusoid or omniglot or miniimagenet')
@@ -229,7 +229,7 @@ def main():
 
     if FLAGS.train == False:
         orig_meta_batch_size = FLAGS.meta_batch_size
-        # always use meta batch size of 1 when testing.
+        # always use meta batch size of 1 when testing.#
         FLAGS.meta_batch_size = 1
 
     if FLAGS.datasource == 'sinusoid':
