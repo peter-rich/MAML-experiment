@@ -207,7 +207,7 @@ class MAML:
             weights['b5'] = tf.Variable(tf.zeros([self.dim_output]), name='b5')
         return weights
 
-    def forward_conv(self, inp, weights, reuse=False, scope=''):
+    def forward_conv(self, inp, weights, reuse=False, scope=''): 
         # reuse is for the normalization parameters.
         channels = self.channels
         inp = tf.reshape(inp, [-1, self.img_size, self.img_size, channels])
