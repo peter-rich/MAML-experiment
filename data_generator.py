@@ -31,7 +31,7 @@ class DataGenerator(object):
             self.input_range = config.get('input_range', [-5.0, 5.0])
             self.dim_input = 1
             self.dim_output = 1
-        elif 'omniglot' in FLAGS.datasource:
+        elif 'omniglot' in FLAGS.datasource: 
             self.num_classes = config.get('num_classes', FLAGS.num_classes)
             self.img_size = config.get('img_size', (28, 28))
             self.dim_input = np.prod(self.img_size)
